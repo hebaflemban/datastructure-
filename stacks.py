@@ -73,7 +73,9 @@ player1 = Stack(5)
 player2 = Stack(5)
 
 for i in range(5):
-     player1.push(deck.pop())
+     x = deck.pop()
+     player1.push(x.data1, x.data2)
+     y = deck.pop()
      player2.push(deck.pop())
 
 print("--"*50)
